@@ -1,0 +1,21 @@
+{
+    "name": "astina/injection-bundle",
+    "type": "symfony-bundle",
+    "description": "Lets you inject services and container parameters into controllers.",
+    "keywords": ["astina", "injection"],
+    "homepage": "http://astina.ch",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Astina",
+            "homepage": "https://github.com/astina/AstinaInjectionBundle/contributors"
+        }
+    ],
+
+    "autoload": {
+        "psr-0": { "Astina\\Bundle\\InjectionBundle": "" }
+    },
+
+    "target-dir": "Astina/Bundle/InjectionBundle"
+}
