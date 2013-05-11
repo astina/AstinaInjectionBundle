@@ -5,17 +5,20 @@
     "keywords": ["astina", "injection"],
     "homepage": "http://astina.ch",
     "license": "MIT",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Astina",
             "homepage": "https://github.com/astina/AstinaInjectionBundle/contributors"
         }
     ],
-
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/symfony": ">=2.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-0": { "Astina\\Bundle\\InjectionBundle": "" }
     },
-
     "target-dir": "Astina/Bundle/InjectionBundle"
 }

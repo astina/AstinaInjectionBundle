@@ -42,7 +42,7 @@ class ControllerListener
             $annotation = $this->reader->getPropertyAnnotation($property, 'Astina\Bundle\InjectionBundle\Annotation\Service');
             if ($annotation) {
                 /** @var $annotation Service */
-                $serviceId = $annotation->id;
+                $serviceId = $annotation->value;
                 $service = $this->container->get($serviceId);
                 $this->injectValue($controller[0], $property, $service);
             }
@@ -51,7 +51,7 @@ class ControllerListener
             $annotation = $this->reader->getPropertyAnnotation($property, 'Astina\Bundle\InjectionBundle\Annotation\Parameter');
             if ($annotation) {
                 /** @var $annotation Parameter */
-                $parameterName = $annotation->name;
+                $parameterName = $annotation->value;
                 $service = $this->container->getParameter($parameterName);
                 $this->injectValue($controller[0], $property, $service);
             }

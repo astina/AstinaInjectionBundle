@@ -2,12 +2,11 @@
 
 namespace Astina\Bundle\InjectionBundle\Annotation;
 
-use Doctrine\ORM\Mapping\Annotation;
+use Doctrine\Common\Annotations\Annotation;
 
 /**
  * @Annotation
  */
-class Parameter implements Annotation
+class Parameter extends Annotation
 {
-    public $name;
 }

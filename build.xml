@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AstinaInjectionBundle" default="main">
+    <target name="build" depends="composer-download, composer-cleanup, composer-install, phpunit" />
+
+    <target name="composer-download">
+        <exec command="rm composer.phar -f &amp;&amp; (curl -sS https://getcomposer.org/installer | php)" />
+    </target>
+
+    <target name="composer-cleanup">
+        <exec command="rm composer.lock -f" />
+    </target>
+
+    <target name="composer-install">
+        <composer command="install">
+            <arg value="--dev" />
+        </composer>
+    </target>
+
+    <target name="phpunit" description="Run unit tests with PHPUnit">
+        <exec command="phpunit" />
+    </target>
+</project>

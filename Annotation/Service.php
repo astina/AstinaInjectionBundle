@@ -2,15 +2,11 @@
 
 namespace Astina\Bundle\InjectionBundle\Annotation;
 
-use Doctrine\ORM\Mapping\Annotation;
+use Doctrine\Common\Annotations\Annotation;
 
 /**
  * @Annotation
  */
-class Service implements Annotation
+class Service extends Annotation
 {
-    /**
-     * @var string
-     */
-    public $id;
 }
